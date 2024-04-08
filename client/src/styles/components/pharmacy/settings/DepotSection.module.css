@@ -1,0 +1,33 @@
+.wrapper > div:first-child {
+    padding: 1em;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.container > h3 > span:first-child {
+    color: #93c5fd;
+}
+
+.container > h3 > span:last-child {
+    font-weight: normal;
+}
+
+.depot-section-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 5em;
+}
+
+.depot-section-footer > img {
+    width: 20em;
+    height:18em;
+}

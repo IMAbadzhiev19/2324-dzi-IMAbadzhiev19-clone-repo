@@ -1,0 +1,36 @@
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1em 2em;
+    background-color: transparent;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.logo-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.logo-container > img {
+    width: 7.5em;
+    height: 7.5em;
+}
+
+.logo-container > figcaption {
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #f4f3ee;
+    font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        font-size: 12px;
+    }
+}

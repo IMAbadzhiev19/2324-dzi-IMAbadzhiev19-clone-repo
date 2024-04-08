@@ -1,0 +1,80 @@
+.container {
+    height: 100vh;
+    background-color: var(--default-background);
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container>h2 {
+    color: #93c5fd;
+    font-size: 2.3em;
+    text-decoration: underline;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.form>.field-group:first-child {
+    gap: 2em;
+}
+
+.field-group {
+    display: flex;
+    gap: 2em;
+}
+
+.buttons {
+    padding-top: 1em;
+    display: flex;
+    gap: 1em;
+    width: 100%;
+}
+
+.buttons> :nth-child(1) {
+    flex: 0 1 60%;
+}
+
+.buttons> :nth-child(2) {
+    flex: 1 1 auto;
+}
+
+footer span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer span:hover {
+    color: #93c5fd;
+    transition: color .3s ease-in;
+}
+
+@media (max-width: 768px) {
+    .container>h2 {
+        font-size: 1.5em;
+    }
+
+    .field-group {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form>.field-group:first-child :last-child input {
+        width: auto;
+    }
+
+    .form>.field-group:first-child {
+        gap: 0;
+    }
+
+    footer {
+        font-size: 0.7em;
+    }
+}

@@ -1,0 +1,22 @@
+.wrapper {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 7em;
+}
+
+.column {
+    background-color: #FFF689;
+    font-weight: bold;
+}
+
+/* .media {
+    margin-inline: auto 10em;
+}
+
+.media > img {
+    width: 17em;
+    height: 17em;
+    overflow: hidden;
+    border-radius: 11em;
+} */

@@ -1,0 +1,23 @@
+.wrapper {
+    position: relative;
+    height: 100%;
+}
+
+.sidebar-wrapper {
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    flex-direction: column;
+    width: 19rem;
+}
+
+.container {
+    padding-left: 18em;
+}
+
+@media (max-width: 768px) {
+    .sidebar-wrapper {
+        width: 5em;
+    }
+}

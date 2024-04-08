@@ -1,0 +1,28 @@
+.container {
+    height: 100vh;
+    background-color: var(--default-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .buttons-wrapper {
+        flex-direction: column;
+        font-size: 0.8em;
+    }
+}

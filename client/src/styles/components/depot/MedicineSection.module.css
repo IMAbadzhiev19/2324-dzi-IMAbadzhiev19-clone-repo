@@ -1,0 +1,43 @@
+.wrapper {
+    padding: 2em;
+}
+
+.buttons {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+.more-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    background-color: var(--default-background);
+    width: 600px;
+    height: 300px;
+    border-radius: 1em;
+    font-family: "Montserrat", sans-serif;
+}
+
+.both-warnings {
+    background: linear-gradient(45deg, #E5A4B4, #FFF689);
+    font-weight: bold;
+}
+
+.expired-row {
+    font-weight: bold;
+    background-color: #FFF689;
+}
+
+.no-quantity {
+    font-weight: bold;
+    background-color: #E5A4B4;
+}
+
+.in-stock {
+    background-color: #7AE7C7;
+    font-weight: bold;
+}

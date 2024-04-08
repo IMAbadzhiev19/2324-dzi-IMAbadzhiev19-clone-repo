@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.container>h2 {
+    color: #FFF;
+    font-size: 2em;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.form>.field-group:first-child {
+    gap: 2em;
+}
+
+.field-group {
+    display: flex;
+    gap: 2em;
+}
+
+.btn {
+    margin-top: 1em;
+}
+
+.form label {
+    color: #FFF;
+}

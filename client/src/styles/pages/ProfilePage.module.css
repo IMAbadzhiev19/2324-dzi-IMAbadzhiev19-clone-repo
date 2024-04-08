@@ -1,0 +1,93 @@
+.wrapper {
+    height: 100vh;
+    background-color: var(--default-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    background-color: #FFF;
+    border-radius: 0.1em;
+    box-shadow: 0.4em 0.4em 0 0 #BCB8B1;
+    border: 1px solid #BCB8B1;
+    padding: 1em;
+    width: 450px;
+}
+
+.container > header {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+header>p {
+    font-size: 3.5em;
+}
+
+header>label {
+    cursor: pointer;
+}
+
+header>label:hover {
+    opacity: 0.7;
+    transition: opacity .3s ease-in;
+}
+.panel-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.field-group {
+    display: flex;
+    gap: 2em;
+}
+
+.field-group input {
+    width: 12.6em;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 0.3em;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        font-size: 0.7em;
+    }
+
+    .container {
+        width: 320px;
+    }
+
+    header>label> :first-child {
+        width: 2em;
+        height: 2em;
+    }
+
+    .field-group input {
+        width: 8.5em;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+}

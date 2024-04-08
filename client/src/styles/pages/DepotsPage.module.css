@@ -1,0 +1,69 @@
+.wrapper {
+    height: 100vh;
+    background-color: var(--default-background);
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.wrapper>header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3em;
+}
+
+.wrapper>header>div {
+    display: flex;
+    gap: 0.3em;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty-list {
+    font-size: 1.7em;
+    color: #FFF;
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+.wrapper>main {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.options-btn {
+    fill: #FFF;
+    width: 30px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.options-btn:hover {
+    opacity: .7;
+    fill: #93c5fd;
+    transition: fill .3s ease-in;
+}
+
+.wrapper>footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    padding-block: 2em;
+}
+
+.wrapper>footer> :first-child * {
+    color: #FFF;
+}
+
+@media (max-width: 768px) {
+    .wrapper>header {
+        flex-direction: column;
+    }
+}

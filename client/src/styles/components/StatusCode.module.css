@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container > div {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 1.6em;
+    color: #FFF;
+    text-shadow: 1px 1px #93c5fd;
+    padding: 1em;
+}
+
+.container > div > p:first-child {
+    font-weight: 500;
+    padding: 0.4em 1em;
+    border-right: 1px solid #EEE;
+}
+
+@media (max-width: 768px) {
+    .container > div {
+        font-size: 1em;
+    }
+}

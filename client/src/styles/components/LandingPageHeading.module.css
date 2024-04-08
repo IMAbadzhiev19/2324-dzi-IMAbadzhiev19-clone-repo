@@ -1,0 +1,78 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.wrapper {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.wrapper>h1 {
+    font-family: "Montserrat", sans-serif;
+    color: #f4f3ee;
+    font-weight: 800;
+    text-align: center;
+}
+
+.typewriter {
+    text-align: center;
+    color: transparent;
+    background-clip: text;
+    background-image:
+        radial-gradient(farthest-corner circle at 100% 0% in oklab,
+            oklch(66% 0.44 215) 0%, oklch(58% 0.36 246) 100%);
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.img {
+    display: flex;
+    justify-content: flex-end;
+    width: 95vw;
+    margin-top: 5em;
+}
+
+.img>img {
+    width: 14em;
+    height: 13em;
+    border-radius: 13em;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 1em;
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .img {
+        margin-top: 0;
+    }
+
+    .img>img {
+        width: 15em;
+        height: 12em;
+    }
+}
+
+@media (min-width: 1824px) {
+    .container {
+        margin-top: 4em;
+    }
+
+    .img {
+        margin-top: 3em;
+    }
+
+    .img>img {
+        width: 17em;
+        height: 15em;
+    }
+}

@@ -1,0 +1,26 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.error>span {
+    color: red;
+    transition: .5s ease-in;
+}
+
+.wrapper> :last-child {
+    padding: 0.7em 1.3em 0.7em 0.5em;
+    border-radius: 0.5em;
+}
+
+.wrapper>label {
+    display: flex;
+    gap: 0.3em;
+}
+
+input {
+    outline: none;
+    border: none;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+    background-color: #fafafa;
+}

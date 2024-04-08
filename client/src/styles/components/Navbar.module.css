@@ -1,0 +1,76 @@
+.wrapper {
+    display: flex;
+    padding: 1em;
+    justify-content: flex-end;
+}
+
+.modal-container {
+    width: 900px;
+    height: 400px;
+    background-color: #FFF;
+    border-radius: 0.3em;
+}
+
+.container {
+    display: flex;
+    gap: 1.5em;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.container>div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.container>div:first-child>* {
+    fill: #dddbdb;
+    width: 2em;
+    height: 2em;
+    padding-bottom: 0.19em;
+}
+
+.group {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 2em;
+}
+
+.group> :first-child {
+    padding-top: 0.3em;
+}
+
+.container>* {
+    cursor: pointer;
+}
+
+.container>*:hover {
+    opacity: 0.9;
+    transition: opacity .3s ease-in;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    padding: 1em 1em;
+}
+
+.buttons> :last-child {
+    background-color: rgb(190, 108, 108);
+    color: white;
+}
+
+.column {
+    background-color: #E5A4B4;
+    font-weight: bold;
+}
+
+.mail-icon {
+    color: #FFF;
+}
+
+.mail-icon-dark {
+    color: #666;
+}

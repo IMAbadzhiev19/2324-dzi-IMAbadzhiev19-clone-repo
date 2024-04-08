@@ -1,0 +1,144 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--default-background);
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper>header {
+  display: flex;
+  padding: 1em;
+}
+
+.header-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header-link> :last-child {
+  padding-top: 0.1em;
+}
+
+.wrapper>header>* {
+  display: flex;
+  width: 95%;
+  justify-content: center;
+}
+
+.media {
+  width: 7em;
+}
+
+.wrapper>.routes-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 1em 1em 0.9em;
+  justify-content: center;
+  height: 60%;
+  font-size: 1.4em;
+  align-items: flex-start;
+}
+
+.route {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+}
+
+.route:hover {
+  color: white;
+}
+
+.route-info {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  padding: 0.41em 1em;
+}
+
+.active-route {
+  color: #fff;
+  border-radius: 1em;
+  background-color: #2a3c68;
+  width: 11em;
+}
+
+.inactive-route {
+  color: #c9c9c9;
+}
+
+.wrapper>footer {
+  margin-top: auto;
+  padding: 2em 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper>footer * {
+  text-decoration: none;
+}
+
+.exit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding-inline: 2em;
+}
+
+.text-sky-500 {
+  color: #0ab6ff;
+}
+
+.text-violet-500 {
+  color: #8a63ff;
+}
+
+.text-rose-500 {
+  color: #ff477e;
+}
+
+.text-yellow-500 {
+  color: #ffcc00;
+}
+
+.text-green-500 {
+  color: #1cb841;
+}
+
+.text-white-500 {
+  color: gainsboro;
+}
+
+@media (max-width: 768px) {
+  .header-link>h1 {
+    display: none;
+  }
+
+  .route-info>p {
+    display: none;
+  }
+
+  .wrapper>footer .change-btn {
+    display: flex;
+    gap: 0.3em;
+    background-color: none;
+    padding: 1em;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 1em;
+    box-shadow: 0 0 0.7em 0 #666 inset;
+    width: 4.5em;
+    font-size: 0.8em;
+    color: #fff;
+  }
+
+  .wrapper>footer .change-btn>p {
+    display: none;
+  }
+
+  .wrapper>* {
+    justify-content: flex-start;
+  }
+}

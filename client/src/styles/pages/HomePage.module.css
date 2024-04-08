@@ -1,0 +1,22 @@
+.wrapper {
+    height: 100vh;
+    background-color: var(--default-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+@media (max-width: 768px) {
+    .select {
+        flex-direction: column;
+        width: 200px;
+    }
+}

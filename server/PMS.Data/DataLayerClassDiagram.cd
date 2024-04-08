@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="PMS.Data.Models.Auth.ApplicationUser">
+    <Position X="1" Y="8.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Models\Auth\ApplicationUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.AspNetCore.Identity.IdentityUser">
+    <Position X="0.75" Y="7" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Microsoft.AspNetCore.Identity.IdentityUser&lt;TKey&gt;">
+    <Position X="0.5" Y="2" Width="2.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="PMS.Data.ApplicationDbContext">
+    <Position X="4" Y="4" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAQBogAECAAAAAAABAEAAAAAAAAAAAAMAACAA=</HashCode>
+      <FileName>ApplicationDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext&lt;TUser&gt;">
+    <Position X="4.25" Y="2.25" Width="2.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext&lt;TUser, TRole, TKey&gt;">
+    <Position X="3" Y="0.5" Width="5.25" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="PMS.Data.Models.PharmacyEntities.Pharmacy">
+    <Position X="12.25" Y="6" Width="3" />
+    <InheritanceLine Type="PMS.Data.Models.AuditableEntity" FixedToPoint="true">
+      <Path>
+        <Point X="12.5" Y="4.06" />
+        <Point X="12.5" Y="5.625" />
+        <Point X="13.5" Y="5.625" />
+        <Point X="13.5" Y="6" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="Founder" Type="PMS.Data.Models.Auth.ApplicationUser" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.063" Y="7.81" />
+        <Point X="13.063" Y="8.446" />
+        <Point X="12.708" Y="8.446" Type="JumpStart" />
+        <Point X="12.542" Y="8.446" Type="JumpEnd" />
+        <Point X="10.958" Y="8.446" Type="JumpStart" />
+        <Point X="10.792" Y="8.446" Type="JumpEnd" />
+        <Point X="9.326" Y="8.446" Type="JumpStart" />
+        <Point X="9.16" Y="8.446" Type="JumpEnd" />
+        <Point X="8.614" Y="8.446" Type="JumpStart" />
+        <Point X="8.448" Y="8.446" Type="JumpEnd" />
+        <Point X="3.125" Y="8.446" />
+        <Point X="3.125" Y="9.062" />
+        <Point X="2.75" Y="9.062" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Pharmacists" Type="PMS.Data.Models.Auth.ApplicationUser" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.938" Y="7.81" />
+        <Point X="13.938" Y="8.294" />
+        <Point X="13.146" Y="8.294" Type="JumpStart" />
+        <Point X="12.979" Y="8.294" Type="JumpEnd" />
+        <Point X="12.708" Y="8.294" Type="JumpStart" />
+        <Point X="12.542" Y="8.294" Type="JumpEnd" />
+        <Point X="10.958" Y="8.294" Type="JumpStart" />
+        <Point X="10.792" Y="8.294" Type="JumpEnd" />
+        <Point X="9.243" Y="8.294" />
+        <Point X="9.243" Y="10.438" />
+        <Point X="5.858" Y="10.438" Type="JumpStart" />
+        <Point X="5.692" Y="10.438" Type="JumpEnd" />
+        <Point X="2.75" Y="10.438" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Medicines" Type="PMS.Data.Models.PharmacyEntities.Medicine" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.625" Y="7.81" />
+        <Point X="14.625" Y="8.185" />
+        <Point X="15.254" Y="8.185" Type="JumpStart" />
+        <Point X="15.42" Y="8.185" Type="JumpEnd" />
+        <Point X="15.46" Y="8.185" Type="JumpStart" />
+        <Point X="15.626" Y="8.185" Type="JumpEnd" />
+        <Point X="19.125" Y="8.185" />
+        <Point X="19.125" Y="7.194" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AEAAACAAAAAgAAAAAAAAAARAAEAAAAQCAAAAAAAACAA=</HashCode>
+      <FileName>Models\PharmacyEntities\Pharmacy.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Address" />
+      <Property Name="Founder" />
+      <Property Name="Depot" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Pharmacists" />
+      <Property Name="Medicines" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="PMS.Data.Models.PharmacyEntities.Depot">
+    <Position X="10.5" Y="8.75" Width="2.5" />
+    <InheritanceLine Type="PMS.Data.Models.AuditableEntity" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.5" Y="4.06" />
+        <Point X="12.5" Y="5.625" />
+        <Point X="14.323" Y="5.625" Type="JumpStart" />
+        <Point X="14.49" Y="5.625" Type="JumpEnd" />
+        <Point X="15.337" Y="5.625" />
+        <Point X="15.337" Y="9.375" />
+        <Point X="13" Y="9.375" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="Address" Type="PMS.Shared.Models.Address" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13" Y="9.843" />
+        <Point X="15.543" Y="9.843" />
+        <Point X="15.543" Y="7.679" />
+        <Point X="16.062" Y="7.679" />
+        <Point X="16.062" Y="6.113" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Manager" Type="PMS.Data.Models.Auth.ApplicationUser" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.5" Y="10.187" />
+        <Point X="9.326" Y="10.187" Type="JumpStart" />
+        <Point X="9.16" Y="10.187" Type="JumpEnd" />
+        <Point X="5.775" Y="10.187" />
+        <Point X="5.775" Y="10.81" />
+        <Point X="2.062" Y="10.81" />
+        <Point X="2.062" Y="10.56" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAQAAAAABAACAAAAAAAACAA=</HashCode>
+      <FileName>Models\PharmacyEntities\Depot.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Address" />
+      <Property Name="Manager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PMS.Shared.Models.Address">
+    <Position X="15.75" Y="4.75" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="PMS.Data.Models.PharmacyEntities.Medicine">
+    <Position X="18" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAIAQAQAAAAAAAAgAAAQAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Models\PharmacyEntities\Medicine.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BasicMedicine" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PMS.Data.Models.AuditableEntity">
+    <Position X="11.5" Y="2.25" Width="2" />
+    <InheritanceLine Type="PMS.Data.Models.BaseEntity" ManuallyRouted="true">
+      <Path>
+        <Point X="10.5" Y="1.603" />
+        <Point X="10.5" Y="1.7" />
+        <Point X="12.5" Y="1.7" />
+        <Point X="12.5" Y="2.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAACAAAAIAAAAAAAAAE=</HashCode>
+      <FileName>Models\AuditableEntity.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PMS.Data.Models.BaseEntity">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\BaseEntity.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PMS.Data.Models.PharmacyEntities.Activity">
+    <Position X="8" Y="2.75" Width="2.25" />
+    <AssociationLine Name="User" Type="PMS.Data.Models.Auth.ApplicationUser" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.531" Y="4.367" />
+        <Point X="8.531" Y="9.5" />
+        <Point X="2.75" Y="9.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAFAAAAAIAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PharmacyEntities\Activity.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="User" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PMS.Data.Models.PharmacyEntities.Notification">
+    <Position X="9.25" Y="5" Width="2" />
+    <InheritanceLine Type="PMS.Data.Models.BaseEntity" ManuallyRouted="true">
+      <Path>
+        <Point X="10.5" Y="1.603" />
+        <Point X="10.5" Y="4.739" />
+        <Point X="10.25" Y="4.739" />
+        <Point X="10.25" Y="5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>CAAAAAAgAAAAAAAAAgAAACBAAAAAAEQAAAAACAAAAAA=</HashCode>
+      <FileName>Models\PharmacyEntities\Notification.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Depot" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PMS.Data.Models.PharmacyEntities.BasicMedicine">
+    <Position X="16.25" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PharmacyEntities\BasicMedicine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMS.Data.Configurations.ActivityEntityConfiguration">
+    <Position X="17.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Configurations\ActivityEntityConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PMS.Data.Configurations.BasicMedicineConfiguration">
+    <Position X="20.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAABAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Configurations\BasicMedicineConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PMS.Data.Configurations.DepotEntityConfiguration">
+    <Position X="20.25" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Configurations\DepotEntityConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PMS.Data.Configurations.MedicineEntityConfiguration">
+    <Position X="20.25" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Configurations\MedicineEntityConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PMS.Data.Configurations.NotificationEntityConfiguration">
+    <Position X="20.25" Y="5.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Configurations\NotificationEntityConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PMS.Data.Configurations.PharmacyEntityConfiguration">
+    <Position X="20.25" Y="7" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Configurations\PharmacyEntityConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PMS.Data.Configurations.RefreshTokenEntityConfiguration">
+    <Position X="16" Y="8.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Configurations\RefreshTokenEntityConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PMS.Data.Configurations.UserEntityConfiguration">
+    <Position X="19" Y="8.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Configurations\UserEntityConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="PMS.Data.Models.IEntity">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\IEntity.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="PMS.Data.Models.IAuditableEntity">
+    <Position X="13.75" Y="2.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAACAAAAIAAAAAAAAAE=</HashCode>
+      <FileName>Models\IAuditableEntity.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

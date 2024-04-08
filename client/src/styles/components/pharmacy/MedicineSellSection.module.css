@@ -1,0 +1,47 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 400px;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.end {
+    opacity: 0.5;
+}
+
+.carousel-wrapper {
+    display: flex;
+    color: #FFF;
+    gap: 4em;
+    padding: 2em;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+}
+
+.container {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.container > h2 {
+    font-size: 3em;
+}
+
+.container > input {
+    padding: 1em;
+    border-radius: 3em;
+}

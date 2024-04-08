@@ -1,0 +1,50 @@
+.wrapper {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 4.5em;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper>div:nth-child(2) p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2em;
+    font-style: italic;
+    color: #93c5fd;
+    text-align: center;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    justify-content: center;
+}
+
+.section-wrapper> :last-child {
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em;
+    width: 30em;
+}
+
+.form:nth-child(1) {
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.form:nth-child(2) {
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+}

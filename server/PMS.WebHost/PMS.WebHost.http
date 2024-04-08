@@ -1,0 +1,7 @@
+@PMS.WebHost_HostAddress = http://localhost:5218
+@PMS.WebHost_HostAddressHttps = https://localhost:7163
+
+GET {{PMS.WebHost_HostAddressHttps}}/auth/user
+Accept: application/json
+
+###
