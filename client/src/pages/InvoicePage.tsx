@@ -97,19 +97,19 @@ const InvoicePage = () => {
                 onClick={async () => {
                   if (fileName?.includes(".")) {
                     toast.warning(
-                      "No file extensions allowed. Just the name of the file."
+                      "Само името на файла"
                     );
                     return;
                   }
 
-                  toast.warning("Sending...");
+                  toast.warning("Изпращане...");
 
                   await invoiceService
                     .makeInvoiceShareRequest(email!, invoiceBase64, fileName!)
                     .then(function () {
-                      toast.success("Successfully shared the invoice");
+                      toast.success("Успешно споделено известие");
                       toast.warning(
-                        "Click anywhere outside the modal to continue"
+                        "Натисни някъде извън модала за да продължиш"
                       );
                     })
                     .catch((error) => {
@@ -118,7 +118,7 @@ const InvoicePage = () => {
                         error.response.data.errors[
                           Object.keys(error.response?.data.errors)[0]
                         ];
-                      toast.error(`Error occurred: ${message}`);
+                      toast.error(`Излезе грешка: ${message}`);
                     });
                 }}
               >

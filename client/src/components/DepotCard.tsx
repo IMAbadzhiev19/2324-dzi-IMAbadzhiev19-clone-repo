@@ -49,7 +49,7 @@ const DepotCard = ({
           <MousePointer2
             onClick={() => {
               handleClick(depotVM.id!);
-              toast.success("Successfully enrolled into depot");
+              toast.success("Успешно влизане");
             }}
           />
           <Trash2
@@ -73,7 +73,7 @@ const DepotCard = ({
             $danger
             onClick={() => {
               handleDelete(depotVM.id!);
-              toast.success("Successfully deleted");
+              toast.success("Успешно изтриване");
             }}
           >
             Потвърди

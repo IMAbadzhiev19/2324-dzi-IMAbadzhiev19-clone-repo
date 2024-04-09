@@ -116,7 +116,7 @@ const Navbar = ({ userVM, dark }: { userVM: UserVM; dark: boolean }) => {
               onClick={async () => {
                 await authService.makeLogoutRequest();
                 storageService.deleteUserData();
-                toast.success("Logged out successfully");
+                toast.success("Успешен изход от профила");
                 navigate("/");
               }}
             >
