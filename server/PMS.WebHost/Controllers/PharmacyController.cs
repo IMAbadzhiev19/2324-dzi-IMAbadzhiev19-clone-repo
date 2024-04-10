@@ -123,7 +123,7 @@ public class PharmacyController : ControllerBase
             this.logger.LogInformation($"User: {this.currentUser.UserId} is trying to delete a pharmacy with id: {id}");
             await this.pharmacyService.DeletePharmacyAsync(id);
 
-            var result = await this.pharmacyService.CheckIfUserHasAnyPharmacies(id);
+            var result = await this.pharmacyService.CheckIfUserHasAnyPharmacies(this.currentUser.UserId);
             if (!result)
             {
                 await this.authService.RemoveRoleFromUserAsync(this.currentUser.UserId, UserRoles.Founder);

@@ -37,12 +37,7 @@ public class BasicMedicineConfiguration : IEntityTypeConfiguration<BasicMedicine
 
         var medicines = JsonConvert.DeserializeObject<BasicMedicine[]>(json);
 
-        foreach (var medicine in medicines)
-        {
-            medicine.Id = Guid.NewGuid().ToString();
-        }
-
-        return medicines;
+        return medicines!;
     }
 
     /// <summary>

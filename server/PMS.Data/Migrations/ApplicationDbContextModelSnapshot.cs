@@ -17,6 +17,7 @@ namespace PMS.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
+                .UseCollation("Cyrillic_General_CI_AS")
                 .HasAnnotation("ProductVersion", "8.0.0")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 

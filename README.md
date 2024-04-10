@@ -1,4 +1,3 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/SRVset1m)
 <h1 align="center">"ЕЛЕКТРОННА СИСТЕМА ЗА УПРАВЛЕНИЕ НА ВЕРИГА ОТ АПТЕКИ"</h1>
 <h6 align="center">Дипломен проект за държавен изпит по професия "Приложен програмист"</h6>
 <br>

@@ -58,7 +58,7 @@ const PharmacyCard = ({
           <MousePointer2
             onClick={() => {
               handleClick(pharmacyVM.id!);
-              toast.success("Successfully enrolled into pharmacy");
+              toast.success("Успешно влизане");
             }}
           />
           {isFounder && (
@@ -84,7 +84,7 @@ const PharmacyCard = ({
             $danger
             onClick={() => {
               handleDelete(pharmacyVM.id!);
-              toast.success("Successfully deleted");
+              toast.success("Успешно изтриване");
             }}
           >
             Confirm
