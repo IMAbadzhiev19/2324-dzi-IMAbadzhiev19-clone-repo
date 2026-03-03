@@ -18,7 +18,7 @@
 ![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
-## Инсталация
+## Стъпки за инсталация
 За да работи проекта е нужно да имате Microsoft SQL Server на вашата машина, както и да имате изтеглен проекта.
 Стъпките са следните:
   * За Web API-я трябва да се актуализира базата данни. Може чрез Package Manager конзолата на Visual Studio, като се използва командата "Update-Database" или през терминала, като сте в директорията "server", като се използва командата "dotnet ef database update".
